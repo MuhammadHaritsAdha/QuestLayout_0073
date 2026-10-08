@@ -53,7 +53,13 @@ fun ActivitasPertama(modifier: Modifier) {
             )
         ) {
             Row() {
-
+                val gambar = painterResource(R.drawable.logo_umy)
+                Image(
+                    painter = gambar,
+                    contentDescription = null,
+                    modifier = Modifier.size(100.dp).padding(5.dp)
+                )
+                Spacer(modifier = Modifier.width(30.dp))
             }
         }
     }
